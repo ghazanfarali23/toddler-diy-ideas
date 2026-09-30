@@ -18,7 +18,7 @@
       <h1>Little Hands, <span class="highlight">Big Ideas</span></h1>
       <p class="subtitle">10 easy DIY projects for 3-year-olds — built from cardboard, bottles, paper and other everyday treasures. No craft-store run needed.</p>
       <div class="stats">
-        <div class="stat"><strong>10</strong><span>ideas</span></div>
+        <div class="stat"><strong id="ideaCount">10</strong><span>ideas</span></div>
         <div class="stat"><strong>0</strong><span>shopping trips</span></div>
         <div class="stat"><strong>3</strong><span>years old approved</span></div>
       </div>
@@ -64,6 +64,30 @@
       <button class="modal-close" id="modalClose" aria-label="Close video">✕</button>
       <div class="video-wrap"><iframe id="videoFrame" title="How-to video" src="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
       <p class="modal-caption" id="modalCaption"></p>
+    </div>
+  </div>
+
+  <div class="modal-backdrop" id="detailBackdrop" hidden>
+    <div class="detail" role="dialog" aria-modal="true" aria-label="Idea details">
+      <button class="modal-close" id="detailClose" aria-label="Close details">✕</button>
+      <div class="detail-hero">
+        <img id="detailImg" src="" alt="">
+        <span class="time-tag" id="detailTime"></span>
+        <span class="new-badge" id="detailNew" hidden>✨ New this week</span>
+      </div>
+      <div class="detail-body">
+        <h2 id="detailTitle"></h2>
+        <div class="material-tags" id="detailTags"></div>
+        <p class="blurb" id="detailBlurb"></p>
+        <h3>🧺 You'll need</h3>
+        <ul class="mat-list" id="detailMats"></ul>
+        <h3>🪜 Step by step</h3>
+        <ol class="steps-timeline" id="detailSteps"></ol>
+        <p class="tip" id="detailTip"></p>
+        <div class="detail-actions">
+          <button class="btn-video" id="detailVideoBtn">▶ Watch how-to</button>
+        </div>
+      </div>
     </div>
   </div>
 

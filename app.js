@@ -196,6 +196,7 @@ function youtubeEmbedUrl(watchUrl) {
 
 function cardHTML(idea) {
   const tags = idea.tags.map(t => `<span class="mtag">${FILTER_LABELS[t]}</span>`).join("");
+  const newBadge = idea.isNew ? `<span class="new-badge">✨ New</span>` : "";
   const videoBtn = idea.video
     ? `<button class="btn-video" data-video="${idea.video}" data-title="${idea.videoTitle || idea.title}">▶ Watch how-to</button>`
     : "";
@@ -205,6 +206,7 @@ function cardHTML(idea) {
       <img src="${idea.image}" alt="${idea.alt}" loading="lazy">
       <span class="time-tag">⏱ ${idea.time}</span>
       <span class="age-tag">👶 3 yrs</span>
+      ${newBadge}
     </div>
     <div class="card-body">
       <h3>${idea.title}</h3>
@@ -219,7 +221,7 @@ function cardHTML(idea) {
         <ol>${idea.steps.map(s => `<li>${s}</li>`).join("")}</ol>
       </details>
       <p class="tip">💡 ${idea.tip}</p>
-      <div class="card-actions">${videoBtn}</div>
+      <div class="card-actions">${videoBtn}<button class="btn-steps" data-detail="${idea.id}">📋 Steps</button></div>
     </div>
   </article>`;
 }
@@ -254,28 +256,120 @@ document.getElementById("surpriseBtn").addEventListener("click", () => {
   setTimeout(() => pick.classList.remove("spotlight"), 1600);
 });
 
+/* ---------- Helpers ---------- */
+function stepIcon(step) {
+  const s = (step || "").toLowerCase();
+  const map = [
+    [/scissor|cut|snip|trim/, "✂️"],
+    [/paint/, "🎨"],
+    [/glue|stick|tape|attach|seal/, "🩹"],
+    [/sort/, "🗂️"],
+    [/draw|color|colour|marker|crayon|sketch|write/, "🖍️"],
+    [/fold/, "📰"],
+    [/pour|fill|water/, "💧"],
+    [/shake/, "🫙"],
+    [/tie|yarn|knot|string|thread/, "🧵"],
+    [/poke|hole|drill|pierce/, "📍"],
+    [/decorat|sticker/, "⭐"],
+    [/dry/, "💨"],
+    [/sort/, "🗂️"],
+    [/hang/, "🖼️"],
+    [/roll|ball|bowl/, "⚽"],
+    [/sprinkle|glitter/, "✨"],
+  ];
+  for (const [re, icon] of map) if (re.test(s)) return icon;
+  return "👉";
+}
+
+function amazonUrl(material) {
+  const q = String(material).replace(/\([^)]*\)/g, "").trim() || String(material);
+  return "https://www.amazon.com/s?k=" + encodeURIComponent(q);
+}
+
+document.getElementById("ideaCount").textContent = IDEAS.length;
+
 /* ---------- Video modal ---------- */
 const backdrop = document.getElementById("modalBackdrop");
 const frame = document.getElementById("videoFrame");
 const caption = document.getElementById("modalCaption");
 
-grid.addEventListener("click", e => {
-  const btn = e.target.closest(".btn-video");
-  if (!btn) return;
-  const embed = youtubeEmbedUrl(btn.dataset.video);
-  if (!embed) { window.open(btn.dataset.video, "_blank", "noopener"); return; }
+function openVideo(url, title) {
+  const embed = youtubeEmbedUrl(url);
+  if (!embed) { window.open(url, "_blank", "noopener"); return; }
   frame.src = embed;
-  caption.textContent = btn.dataset.title;
+  caption.textContent = title;
   backdrop.hidden = false;
   document.body.style.overflow = "hidden";
-});
+}
 
-function closeModal() {
+function closeVideo() {
   frame.src = "";
   backdrop.hidden = true;
+  if (detailBackdrop.hidden) document.body.style.overflow = "";
+}
+
+document.getElementById("modalClose").addEventListener("click", closeVideo);
+backdrop.addEventListener("click", e => { if (e.target === backdrop) closeVideo(); });
+
+/* ---------- Detail modal ---------- */
+const detailBackdrop = document.getElementById("detailBackdrop");
+
+function openDetail(id) {
+  const idea = IDEAS.find(i => i.id === id);
+  if (!idea) return;
+  const img = document.getElementById("detailImg");
+  img.src = idea.image;
+  img.alt = idea.alt;
+  document.getElementById("detailTime").textContent = "⏱ " + idea.time;
+  document.getElementById("detailNew").hidden = !idea.isNew;
+  document.getElementById("detailTitle").textContent = idea.title;
+  document.getElementById("detailTags").innerHTML =
+    idea.tags.map(t => `<span class="mtag">${FILTER_LABELS[t]}</span>`).join("");
+  document.getElementById("detailBlurb").textContent = idea.blurb;
+  document.getElementById("detailMats").innerHTML =
+    idea.materials.map(m =>
+      `<li><span>${m}</span><a class="buy" href="${amazonUrl(m)}" target="_blank" rel="noopener" title="Find it on Amazon">🛒</a></li>`
+    ).join("");
+  document.getElementById("detailSteps").innerHTML =
+    idea.steps.map(s =>
+      `<li><span class="step-icon" aria-hidden="true">${stepIcon(s)}</span><span>${s}</span></li>`
+    ).join("");
+  document.getElementById("detailTip").textContent = "💡 " + idea.tip;
+  const vb = document.getElementById("detailVideoBtn");
+  if (idea.video) {
+    vb.hidden = false;
+    vb.dataset.video = idea.video;
+    vb.dataset.title = idea.videoTitle || idea.title;
+  } else {
+    vb.hidden = true;
+  }
+  detailBackdrop.hidden = false;
+  document.body.style.overflow = "hidden";
+  document.querySelector("#detailBackdrop .detail").scrollTop = 0;
+}
+
+function closeDetail() {
+  detailBackdrop.hidden = true;
   document.body.style.overflow = "";
 }
 
-document.getElementById("modalClose").addEventListener("click", closeModal);
-backdrop.addEventListener("click", e => { if (e.target === backdrop) closeModal(); });
-document.addEventListener("keydown", e => { if (e.key === "Escape" && !backdrop.hidden) closeModal(); });
+document.getElementById("detailClose").addEventListener("click", closeDetail);
+detailBackdrop.addEventListener("click", e => { if (e.target === detailBackdrop) closeDetail(); });
+document.getElementById("detailVideoBtn").addEventListener("click", e => {
+  openVideo(e.currentTarget.dataset.video, e.currentTarget.dataset.title);
+});
+
+/* ---------- Card interactions ---------- */
+grid.addEventListener("click", e => {
+  const vbtn = e.target.closest(".btn-video");
+  if (vbtn) { openVideo(vbtn.dataset.video, vbtn.dataset.title); return; }
+  if (e.target.closest("a")) return; // let links behave normally
+  const card = e.target.closest(".card");
+  if (card) openDetail(card.dataset.id);
+});
+
+document.addEventListener("keydown", e => {
+  if (e.key !== "Escape") return;
+  if (!backdrop.hidden) closeVideo();
+  else if (!detailBackdrop.hidden) closeDetail();
+});
