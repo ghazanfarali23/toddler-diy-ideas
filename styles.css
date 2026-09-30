@@ -394,10 +394,25 @@ footer { text-align: center; padding: 2.5rem 1.5rem; color: #8a6f5c; font-size: 
 
 .steps-timeline { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.55rem; }
 .steps-timeline li {
-  display: flex; gap: 0.8rem; align-items: flex-start;
+  display: flex; gap: 0.8rem; align-items: center;
   background: #f8f2e7; border-radius: 12px; padding: 0.65rem 0.85rem; line-height: 1.45;
+  opacity: 0; animation: stepIn 0.5s ease forwards;
 }
-.step-icon { font-size: 1.45rem; line-height: 1.25; flex: none; }
+@keyframes stepIn {
+  from { opacity: 0; transform: translateY(14px) scale(0.98); }
+  to { opacity: 1; transform: none; }
+}
+.step-media { flex: none; width: 84px; display: flex; align-items: center; justify-content: center; }
+.step-img {
+  width: 84px; height: 84px; object-fit: cover; border-radius: 12px; display: block;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.14); border: 2px solid #fff;
+}
+.step-icon { font-size: 1.45rem; line-height: 1.25; flex: none; display: inline-block; animation: wiggle 2.8s ease-in-out infinite; }
+.step-media .step-icon { font-size: 2rem; }
+@keyframes wiggle {
+  0%, 100% { transform: rotate(-8deg); }
+  50% { transform: rotate(8deg); }
+}
 
 .detail-actions { margin-top: 1.1rem; display: flex; gap: 0.6rem; }
 .detail-actions .btn-video { flex: 1; }

@@ -1,12 +1,13 @@
-# Little Hands, Big Ideas 🎨
+# Talha's Creative House 🎨
 
-A cheerful one-page website with **10 easy DIY craft ideas for 3-year-olds**, all made from everyday household stuff — cardboard, plastic bottles, paper, egg cartons.
+A cheerful one-page website with **easy DIY craft ideas for 3-year-olds**, all made from everyday household stuff — cardboard, plastic bottles, paper, egg cartons.
 
 ## What's inside
 
 - 📸 A photo for every idea
-- 🧺 Materials list (nothing to buy)
-- 👉 Step-by-step instructions
+- 🖼️ An illustration for every step
+- 🧺 Materials list with Amazon links
+- 👉 Step-by-step instructions (animated)
 - ▶️ How-to videos that play right on the page
 - 🔍 Filter by material (cardboard / bottles / paper)
 - 🎲 "Surprise me" random idea button
@@ -24,13 +25,15 @@ Or publish it free with GitHub Pages: repo Settings → Pages → deploy from th
 ```
 index.html    — page structure
 styles.css    — playful styling
-app.js        — the 10 ideas (edit this to add your own!)
+app.js        — the ideas (edit this to add your own!)
 images/       — one photo per idea
+images/steps/ — one illustration per step, named <idea-id>-<step-number>.jpg
+                (e.g. box-town-1.jpg). The page finds them automatically.
 ```
 
 ## Adding your own idea
 
-Open `app.js` and add an entry to the `IDEAS` array: title, photo, materials, steps, and an optional YouTube `video` link. It appears on the page automatically.
+Open `app.js` and add an entry to the `IDEAS` array: title, photo, materials, steps, and an optional YouTube `video` link. It appears on the page automatically. To illustrate the steps, generate one flat pastel children's-book-style picture per step with `media.generate_image` and save it as `images/steps/<your-id>-1.jpg`, `<your-id>-2.jpg`, … — no code changes needed, the detail view picks them up by file name (and falls back to an emoji icon if a picture is missing).
 
 ## Photo credits
 

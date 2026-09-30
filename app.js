@@ -1,4 +1,4 @@
-/* Little Hands, Big Ideas — card data & interactions */
+/* Talha's Creative House — card data & interactions */
 
 const IDEAS = [
   {
@@ -331,9 +331,10 @@ function openDetail(id) {
       `<li><span>${m}</span><a class="buy" href="${amazonUrl(m)}" target="_blank" rel="noopener" title="Find it on Amazon">🛒</a></li>`
     ).join("");
   document.getElementById("detailSteps").innerHTML =
-    idea.steps.map(s =>
-      `<li><span class="step-icon" aria-hidden="true">${stepIcon(s)}</span><span>${s}</span></li>`
-    ).join("");
+    idea.steps.map((s, i) => {
+      const fb = `<span class="step-icon" aria-hidden="true">${stepIcon(s)}</span>`;
+      return `<li style="animation-delay:${i * 90}ms"><span class="step-media"><img class="step-img" src="images/steps/${idea.id}-${i + 1}.jpg" alt="" loading="lazy" onerror='this.outerHTML=${JSON.stringify(fb)}'></span><span>${s}</span></li>`;
+    }).join("");
   document.getElementById("detailTip").textContent = "💡 " + idea.tip;
   const vb = document.getElementById("detailVideoBtn");
   if (idea.video) {
