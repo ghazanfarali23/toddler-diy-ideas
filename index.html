@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Little Hands, Big Ideas — DIY Crafts for 3-Year-Olds</title>
+  <meta name="description" content="10 easy DIY craft ideas for 3-year-olds made from everyday stuff: cardboard, bottles, paper and more. Photos, steps and how-to videos.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="hero">
+    <div class="hero-inner">
+      <span class="badge">♻️ 100% from stuff you already have</span>
+      <h1>Little Hands, <span class="highlight">Big Ideas</span></h1>
+      <p class="subtitle">10 easy DIY projects for 3-year-olds — built from cardboard, bottles, paper and other everyday treasures. No craft-store run needed.</p>
+      <div class="stats">
+        <div class="stat"><strong>10</strong><span>ideas</span></div>
+        <div class="stat"><strong>0</strong><span>shopping trips</span></div>
+        <div class="stat"><strong>3</strong><span>years old approved</span></div>
+      </div>
+    </div>
+    <div class="hero-shapes" aria-hidden="true">
+      <span class="shape s1">📦</span><span class="shape s2">🎨</span>
+      <span class="shape s3">✂️</span><span class="shape s4">🫙</span>
+      <span class="shape s5">🐛</span><span class="shape s6">🎸</span>
+    </div>
+  </header>
+
+  <div class="toolbar">
+    <div class="filters" role="group" aria-label="Filter by material">
+      <button class="chip active" data-filter="all">🌈 All</button>
+      <button class="chip" data-filter="cardboard">📦 Cardboard</button>
+      <button class="chip" data-filter="bottles">🫙 Bottles</button>
+      <button class="chip" data-filter="paper">📄 Paper &amp; rolls</button>
+    </div>
+    <button class="surprise" id="surpriseBtn">🎲 Surprise me</button>
+  </div>
+
+  <main>
+    <div class="grid" id="grid"></div>
+    <p class="empty" id="empty" hidden>No ideas here — try another filter! 🌈</p>
+  </main>
+
+  <section class="safety">
+    <h2>🛡️ Grown-up ground rules</h2>
+    <ul>
+      <li><strong>Craft together</strong> — a grown-up handles scissors, cutters and hot glue.</li>
+      <li><strong>Small parts stay supervised</strong> — bottle caps and googly eyes are for gluing, not tasting.</li>
+      <li><strong>Seal sensory bottles tight</strong> — tape or glue the cap so curious hands can't open them.</li>
+      <li><strong>Keep it non-toxic</strong> — wash bottles well and use kid-safe paint and glue.</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>Made with ♻️ and 💛 for little makers everywhere. Photos belong to their original creators — linked where possible.</p>
+  </footer>
+
+  <div class="modal-backdrop" id="modalBackdrop" hidden>
+    <div class="modal" role="dialog" aria-modal="true" aria-label="How-to video">
+      <button class="modal-close" id="modalClose" aria-label="Close video">✕</button>
+      <div class="video-wrap"><iframe id="videoFrame" title="How-to video" src="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+      <p class="modal-caption" id="modalCaption"></p>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
