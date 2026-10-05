@@ -202,23 +202,22 @@ const IDEAS = [
     isNew: true
   },
   {
-    id: "bottle-piggy-bank",
-    title: "🐷 Bottle Piggy Bank",
-    image: "images/bottle-piggy-bank.jpg",
-    alt: "A homemade piggy bank made from a plastic bottle with paper ears and coins",
-    tags: ["bottles"],
-    time: "20–30 min",
-    blurb: "An empty bottle becomes the piggiest pig. A grown-up cuts the coin slot; your 3-year-old handles the ears, eyes and paint — and the first coin.",
-    materials: ["Empty plastic bottle with cap", "Pink paper or paint", "4 bottle caps (legs)", "Googly eyes or markers", "Glue", "Pipe cleaner (tail)", "Coins to save"],
+    id: "playdough",
+    title: "🌈 Homemade Playdough",
+    image: "images/playdough.jpg",
+    alt: "Toddler hands shaping a rainbow of homemade playdough",
+    tags: [],
+    time: "15 min",
+    blurb: "Soft, squishy playdough from kitchen staples — no cooking, no cream of tartar. Mix, knead, and play!",
+    materials: ["All-purpose flour", "Table salt", "Warm water", "Vegetable oil", "Food coloring"],
     steps: [
-      "Grown-up cuts a coin-sized slot in the top of the bottle.",
-      "Paint the bottle pink — or wrap it in pink paper.",
-      "Glue on 4 bottle-cap legs; the screw-on cap becomes the pig's nose.",
-      "Add paper ears, googly eyes and a curly pipe-cleaner tail.",
-      "Drop in your first coin — savings start now!"
+      "Mix 1/2 cup flour and 1/4 cup salt in a big bowl.",
+      "Stir a few drops of food coloring into 1/4 cup warm water.",
+      "Pour the colored water and 2 teaspoons of oil into the bowl.",
+      "Mix, then knead with your hands until smooth — add flour if sticky."
     ],
-    tip: "Count the coins together every Sunday — sneaky early math practice.",
-    video: "https://www.youtube.com/watch?v=hy194xVXoPo", videoTitle: "DIY: HOW TO MAKE A HOMEMADE POP BOTTLE PIGGY BANK!",
+    tip: "Store in a sealed bag and it stays soft for weeks. Make a few colors and swirl them together!",
+    video: "https://www.youtube.com/watch?v=y4eTHPeHvAc", videoTitle: "BEST Playdough recipe WITHOUT cream of tartar or cooking!",
     isNew: true
   }
 ];
