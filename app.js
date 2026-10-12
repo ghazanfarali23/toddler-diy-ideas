@@ -198,8 +198,7 @@ const IDEAS = [
       "Fan the wings open and stick your butterfly on the window."
     ],
     tip: "Make one butterfly a day for a week and hang a mobile of them from a coat hanger.",
-    video: "https://www.youtube.com/watch?v=LfpezD0dv2w", videoTitle: "At-Home Kids Projects | Coffee Filter Butterflies",
-    isNew: true
+    video: "https://www.youtube.com/watch?v=LfpezD0dv2w", videoTitle: "At-Home Kids Projects | Coffee Filter Butterflies"
   },
   {
     id: "playdough",
@@ -217,7 +216,46 @@ const IDEAS = [
       "Mix, then knead with your hands until smooth — add flour if sticky."
     ],
     tip: "Store in a sealed bag and it stays soft for weeks. Make a few colors and swirl them together!",
-    video: "https://www.youtube.com/watch?v=y4eTHPeHvAc", videoTitle: "BEST Playdough recipe WITHOUT cream of tartar or cooking!",
+    video: "https://www.youtube.com/watch?v=y4eTHPeHvAc", videoTitle: "BEST Playdough recipe WITHOUT cream of tartar or cooking!"
+  },
+  {
+    id: "toilet-roll-rocket",
+    title: "🚀 Toilet Roll Rocket",
+    image: "images/toilet-roll-rocket.jpg",
+    alt: "Homemade rocket ship made from a toilet paper roll with paper fins and tissue flames",
+    tags: ["cardboard"],
+    time: "20–25 min",
+    blurb: "Blast off to space with an empty toilet roll! Wrap it in color, pop on a cone nose, and add tissue-paper flames for a rocket that is ready for countdown.",
+    materials: ["Empty toilet paper roll", "Colored construction paper", "Glue stick or tape", "Scissors", "Tissue paper"],
+    steps: [
+      "Wrap the toilet roll in colored paper and glue or tape it in place.",
+      "Cut a circle from paper, snip to the center, and curl it into a cone for the nose; tape it on top.",
+      "Cut out three triangles and glue them around the bottom as fins.",
+      "Decorate with star stickers and draw round windows with crayons.",
+      "Stuff orange and yellow tissue paper into the bottom for flames — then shout \"blast off!\""
+    ],
+    tip: "Count down from 10 before launch — toddlers love the drama, and it sneaks in number practice.",
+    video: "https://www.youtube.com/watch?v=sXHYd6GSCEw", videoTitle: "How to Make a Rocket at Home for Kids | Fun At-Home Science Activities",
+    isNew: true
+  },
+  {
+    id: "egg-carton-flowers",
+    title: "🌸 Egg Carton Flowers",
+    image: "images/egg-carton-flowers.png",
+    alt: "Bright painted flowers made from egg carton cups on pipe cleaner stems",
+    tags: ["cardboard"],
+    time: "25–30 min",
+    blurb: "Turn an old egg carton into a bouquet that never wilts! Cut, paint, and add pom-pom centers for spring flowers you can make in any season.",
+    materials: ["Cardboard egg carton", "Washable paint", "Paintbrushes", "Pipe cleaners", "Pom-poms"],
+    steps: [
+      "Cut the egg carton apart into individual cups — each cup becomes a flower.",
+      "Trim the edges of each cup into rounded petal shapes.",
+      "Paint the flowers inside and out in bright colors, then let them dry completely.",
+      "Glue a pom-pom into the center of each flower.",
+      "Poke a pipe cleaner through the bottom for a stem and arrange your bouquet in a jar."
+    ],
+    tip: "Make a few extra and gift them in a jam jar — a sweet handmade surprise for grandparents.",
+    video: "https://www.youtube.com/watch?v=6elzntDiwjc", videoTitle: "Egg Carton Crafts | Easy DIY Daisy Flowers From an Egg Tray",
     isNew: true
   }
 ];
