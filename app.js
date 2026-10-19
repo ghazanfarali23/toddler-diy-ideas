@@ -235,8 +235,7 @@ const IDEAS = [
       "Stuff orange and yellow tissue paper into the bottom for flames — then shout \"blast off!\""
     ],
     tip: "Count down from 10 before launch — toddlers love the drama, and it sneaks in number practice.",
-    video: "https://www.youtube.com/watch?v=sXHYd6GSCEw", videoTitle: "How to Make a Rocket at Home for Kids | Fun At-Home Science Activities",
-    isNew: true
+    video: "https://www.youtube.com/watch?v=sXHYd6GSCEw", videoTitle: "How to Make a Rocket at Home for Kids | Fun At-Home Science Activities"
   },
   {
     id: "egg-carton-flowers",
@@ -255,7 +254,46 @@ const IDEAS = [
       "Poke a pipe cleaner through the bottom for a stem and arrange your bouquet in a jar."
     ],
     tip: "Make a few extra and gift them in a jam jar — a sweet handmade surprise for grandparents.",
-    video: "https://www.youtube.com/watch?v=6elzntDiwjc", videoTitle: "Egg Carton Crafts | Easy DIY Daisy Flowers From an Egg Tray",
+    video: "https://www.youtube.com/watch?v=6elzntDiwjc", videoTitle: "Egg Carton Crafts | Easy DIY Daisy Flowers From an Egg Tray"
+  },
+  {
+    id: "bottle-bird-feeder",
+    title: "🐦 Plastic Bottle Bird Feeder",
+    image: "images/bottle-bird-feeder.jpg",
+    alt: "A homemade bird feeder made from a recycled plastic bottle hanging from a tree",
+    tags: ["bottles"],
+    time: "20–25 min",
+    blurb: "Turn an empty plastic bottle into a little restaurant for birds! Poke some holes, slide in perches, fill it with seed — then watch from the window as feathered guests check in.",
+    materials: ["Clean empty plastic bottle (with cap)", "Bird seed", "2 wooden sticks or pencils", "String or twine", "Scissors (grown-up job)", "Pushpin or nail (grown-up job)"],
+    steps: [
+      "Grown-up rinses the bottle, dries it, and removes the label.",
+      "Grown-up pokes two holes on opposite sides near the bottom and slides a stick through as a perch; repeat a little higher up for a second perch.",
+      "Cut small feeding holes just above each perch so the seed can peek out.",
+      "Pour in bird seed with a funnel, screw the cap on, and tie string around the neck for hanging.",
+      "Hang it on a tree branch outside a window — then watch the birds arrive! 🐦"
+    ],
+    tip: "Hang the feeder where your 3-year-old can see it from inside — breakfast bird-watching is the best part.",
+    video: "https://www.youtube.com/watch?v=qzYebSAj4GQ", videoTitle: "DIY Bird  Feeder.  Simple  Project from Plastic Bottles",
+    isNew: true
+  },
+  {
+    id: "paper-cup-telephone",
+    title: "📞 Paper Cup Telephone",
+    image: "images/paper-cup-telephone.jpg",
+    alt: "Two kids playing with a string telephone made from paper cups",
+    tags: ["paper"],
+    time: "10–15 min",
+    blurb: "Two paper cups and a long string — and suddenly voices travel across the room like magic. A classic first science experiment that genuinely works.",
+    materials: ["2 paper cups", "Long string or yarn (10–15 feet)", "2 paper clips or buttons", "Pencil or pin (grown-up job)", "Stickers or crayons (for decorating)"],
+    steps: [
+      "Grown-up pokes a small hole in the bottom of each cup with a pencil.",
+      "Thread the string through one cup and tie it to a paper clip inside so it can't pull out.",
+      "Thread the other end through the second cup and tie it off the same way.",
+      "Decorate the cups with stickers, drawings, or your 'phone number'. ☎️",
+      "Each person takes a cup and walks apart until the string is tight — then whisper! The other person listens."
+    ],
+    tip: "The string MUST be tight and not touching anything — that's the secret. Try loose vs. tight and hear the difference.",
+    video: "https://www.youtube.com/watch?v=nBaq_gqpPjo", videoTitle: "how to make a play telephone",
     isNew: true
   }
 ];
