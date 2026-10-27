@@ -273,8 +273,7 @@ const IDEAS = [
       "Hang it on a tree branch outside a window — then watch the birds arrive! 🐦"
     ],
     tip: "Hang the feeder where your 3-year-old can see it from inside — breakfast bird-watching is the best part.",
-    video: "https://www.youtube.com/watch?v=qzYebSAj4GQ", videoTitle: "DIY Bird  Feeder.  Simple  Project from Plastic Bottles",
-    isNew: true
+    video: "https://www.youtube.com/watch?v=qzYebSAj4GQ", videoTitle: "DIY Bird  Feeder.  Simple  Project from Plastic Bottles"
   },
   {
     id: "paper-cup-telephone",
@@ -293,7 +292,46 @@ const IDEAS = [
       "Each person takes a cup and walks apart until the string is tight — then whisper! The other person listens."
     ],
     tip: "The string MUST be tight and not touching anything — that's the secret. Try loose vs. tight and hear the difference.",
-    video: "https://www.youtube.com/watch?v=nBaq_gqpPjo", videoTitle: "how to make a play telephone",
+    video: "https://www.youtube.com/watch?v=nBaq_gqpPjo", videoTitle: "how to make a play telephone"
+  },
+  {
+    id: "pasta-necklace",
+    title: "🍝 Pasta Necklace",
+    image: "images/pasta-necklace.jpg",
+    alt: "A smiling child holding up a colorful pasta necklace made from dyed pasta tubes",
+    tags: [],
+    time: "20–30 min",
+    blurb: "Dye pantry pasta in rainbow colors, thread it onto yarn, and wear the tastiest jewelry in the house. Great pattern and counting practice too.",
+    materials: ["Dried pasta with holes (penne, rigatoni, macaroni)", "Food coloring", "Zip bags", "Yarn or string", "Tape", "Paper towels"],
+    steps: [
+      "Grown-up: put a handful of pasta in a zip bag with a few drops of food coloring and a spoonful of rubbing alcohol (optional), seal and shake until coated.",
+      "Spread the colored pasta on paper towels or a tray and let it dry completely.",
+      "Cut a piece of yarn long enough to slip over your child's head, and wrap tape around one end to make a stiff 'needle'.",
+      "Tie a big knot (or one pasta piece) at the other end so the beads can't slide off.",
+      "Thread the pasta — try a pattern: red, blue, red, blue! Tie the ends together and wear it. 🎉"
+    ],
+    tip: "Make matching bracelets from the leftover pasta — one for every grandparent.",
+    video: "https://www.youtube.com/watch?v=qES3ctrw7ek", videoTitle: "Pasta Crafts | Simple Art Ideas for Kids",
+    isNew: true
+  },
+  {
+    id: "bubble-wands",
+    title: "🫧 Pipe Cleaner Bubble Wands",
+    image: "images/bubble-wands.jpg",
+    alt: "A child blowing a big bubble through a purple pipe cleaner wand outdoors",
+    tags: [],
+    time: "15–20 min",
+    blurb: "Bend a pipe cleaner into any shape, dip it in soapy water, and blow — every shape still makes a round bubble, which blows toddlers' minds.",
+    materials: ["Pipe cleaners (chenille stems)", "Pony beads (optional)", "Dish soap", "Warm water", "Sugar (a spoonful)", "A cup or jar"],
+    steps: [
+      "Bend the top of a pipe cleaner into a circle, heart, star or square, and twist the end to hold the shape.",
+      "Thread a few pony beads onto the straight handle and fold the tip over so they stay on.",
+      "Grown-up: mix the bubble solution — 1 cup warm water, 2 tablespoons dish soap and 1 teaspoon sugar — and stir gently.",
+      "Dip the loop into the solution and lift it slowly so a soapy film stretches across it.",
+      "Blow gently through the loop — or just wave it in the breeze — and chase the bubbles! 🫧"
+    ],
+    tip: "Bubbles are always round no matter the wand shape — try a star wand and watch your 3-year-old's amazed face.",
+    video: "https://www.youtube.com/watch?v=kFVXWZPJtKk", videoTitle: "How To Make a BUBBLE WAND",
     isNew: true
   }
 ];
