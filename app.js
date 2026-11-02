@@ -311,8 +311,7 @@ const IDEAS = [
       "Thread the pasta — try a pattern: red, blue, red, blue! Tie the ends together and wear it. 🎉"
     ],
     tip: "Make matching bracelets from the leftover pasta — one for every grandparent.",
-    video: "https://www.youtube.com/watch?v=qES3ctrw7ek", videoTitle: "Pasta Crafts | Simple Art Ideas for Kids",
-    isNew: true
+    video: "https://www.youtube.com/watch?v=qES3ctrw7ek", videoTitle: "Pasta Crafts | Simple Art Ideas for Kids"
   },
   {
     id: "bubble-wands",
@@ -331,7 +330,46 @@ const IDEAS = [
       "Blow gently through the loop — or just wave it in the breeze — and chase the bubbles! 🫧"
     ],
     tip: "Bubbles are always round no matter the wand shape — try a star wand and watch your 3-year-old's amazed face.",
-    video: "https://www.youtube.com/watch?v=kFVXWZPJtKk", videoTitle: "How To Make a BUBBLE WAND",
+    video: "https://www.youtube.com/watch?v=kFVXWZPJtKk", videoTitle: "How To Make a BUBBLE WAND"
+  },
+  {
+    id: "paper-plate-tambourine",
+    title: "🎵 Paper Plate Tambourine",
+    image: "images/paper-plate-tambourine.jpg",
+    alt: "A colorful paper plate tambourine with jingle bells around its edge",
+    tags: ["paper"],
+    time: "15–20 min",
+    blurb: "Two paper plates, a handful of dried beans, and some jingle bells become a shake-and-dance tambourine. Decorate it, seal it, then start a living-room parade!",
+    materials: ["2 sturdy paper plates", "Dried beans or uncooked rice (a small handful)", "Jingle bells", "Yarn or pipe cleaners", "Crayons, markers or stickers", "Stapler or tape (grown-up job)"],
+    steps: [
+      "Decorate the backs of both paper plates with crayons, markers and stickers — these will be the outside of your tambourine.",
+      "Put a small handful of dried beans or rice in the middle of one plate.",
+      "Place the second plate on top, facing the first, and have a grown-up staple or tape all around the edge so nothing escapes.",
+      "Grown-up punches holes around the rim; thread yarn or a pipe cleaner through each hole and tie on a jingle bell, loose enough to jingle.",
+      "Shake, tap and dance — try fast, slow, loud and quiet! 🎶"
+    ],
+    tip: "Cover staples with tape and supervise bells closely — if bells feel risky, skip them; the beans inside still make a great shaker.",
+    video: "https://www.youtube.com/watch?v=6wkGFKf1Ek0", videoTitle: "TAMBOURINE | Musical Instrument | Paper Plate Craft | Fast-n-Easy | DIY Labs",
+    isNew: true
+  },
+  {
+    id: "milk-jug-watering-can",
+    title: "💧 Milk Jug Watering Can",
+    image: "images/milk-jug-watering-can.jpg",
+    alt: "A toddler watering plants with a homemade watering can made from a recycled milk jug",
+    tags: ["bottles"],
+    time: "15–20 min",
+    blurb: "An empty milk jug becomes a gentle watering can for little gardeners. Decorate it, fill it half full, and give the plants a rain shower.",
+    materials: ["Clean empty milk jug with cap (half-gallon is easiest for little hands)", "Nail or pushpin (grown-up job)", "Stickers or permanent markers", "Water", "Small funnel (optional)"],
+    steps: [
+      "Grown-up rinses the jug thoroughly with warm soapy water, removes the label, and lets it dry.",
+      "Decorate the dry outside of the jug with stickers or markers — flowers, raindrops and suns welcome.",
+      "Grown-up pokes 6 to 9 small holes in the cap with a nail or pushpin — this is the sprinkler top.",
+      "Grown-up pokes one tiny air hole near the top by the handle so the water flows smoothly.",
+      "Fill the jug only half full, screw the cap back on, and tip it gently over the plants for a rain shower! 🌱"
+    ],
+    tip: "Half-fill a big jug so it is not too heavy for little arms, and start with thirsty outdoor plants where spills do not matter.",
+    video: "https://www.youtube.com/watch?v=LJzkrwCjUDI", videoTitle: "DIY: Make a Watering Can from an old Milk Jug (...perfect for kids!)",
     isNew: true
   }
 ];
