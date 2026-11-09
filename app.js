@@ -349,8 +349,7 @@ const IDEAS = [
       "Shake, tap and dance — try fast, slow, loud and quiet! 🎶"
     ],
     tip: "Cover staples with tape and supervise bells closely — if bells feel risky, skip them; the beans inside still make a great shaker.",
-    video: "https://www.youtube.com/watch?v=6wkGFKf1Ek0", videoTitle: "TAMBOURINE | Musical Instrument | Paper Plate Craft | Fast-n-Easy | DIY Labs",
-    isNew: true
+    video: "https://www.youtube.com/watch?v=6wkGFKf1Ek0", videoTitle: "TAMBOURINE | Musical Instrument | Paper Plate Craft | Fast-n-Easy | DIY Labs"
   },
   {
     id: "milk-jug-watering-can",
@@ -369,7 +368,46 @@ const IDEAS = [
       "Fill the jug only half full, screw the cap back on, and tip it gently over the plants for a rain shower! 🌱"
     ],
     tip: "Half-fill a big jug so it is not too heavy for little arms, and start with thirsty outdoor plants where spills do not matter.",
-    video: "https://www.youtube.com/watch?v=LJzkrwCjUDI", videoTitle: "DIY: Make a Watering Can from an old Milk Jug (...perfect for kids!)",
+    video: "https://www.youtube.com/watch?v=LJzkrwCjUDI", videoTitle: "DIY: Make a Watering Can from an old Milk Jug (...perfect for kids!)"
+  },
+  {
+    id: "paper-bag-kite",
+    title: "🪁 Paper Bag Kite",
+    image: "images/paper-bag-kite.jpg",
+    alt: "A decorated brown paper bag kite with colorful yarn streamers flying against a white sky",
+    tags: ["paper"],
+    time: "15–20 min",
+    blurb: "A paper lunch bag, some yarn and a breezy day — that's a kite. Decorate it, add streamer tails, then hold on tight and run!",
+    materials: ["Paper lunch bag", "Yarn or string (about 2–3 feet)", "Popsicle stick", "Crepe paper streamers or ribbon scraps", "Tape", "Crayons, markers or stickers"],
+    steps: [
+      "Lay the paper bag flat and decorate both sides with crayons, markers and stickers — suns, rainbows and stars all fly well.",
+      "Grown-up ties one end of the yarn tightly around the middle of the popsicle stick.",
+      "Grown-up snips a small hole in the center of the bag's closed bottom and threads the free end of the yarn through from the inside, so the stick rests flat inside the bag.",
+      "Tape colorful streamers or ribbon scraps around the open end of the bag to make a flowing tail.",
+      "Head outside, hold the bag open, and run into the breeze — your kite will dance along behind you! 🪁"
+    ],
+    tip: "No wind? No problem — toddlers flying this kite mostly power it by running, and the bag puffs up beautifully behind them.",
+    video: "https://www.youtube.com/watch?v=WpDA4xP1wb4", videoTitle: "How to make handmade paper Kite at home / DIY Kite / Paper Kite making idea",
+    isNew: true
+  },
+  {
+    id: "magnetic-fishing-game",
+    title: "🎣 Magnetic Fishing Game",
+    image: "images/magnetic-fishing-game.jpg",
+    alt: "Colorful paper fish on a blue surface with a toy fishing rod dangling a magnet above them",
+    tags: ["paper", "cardboard"],
+    time: "20–25 min",
+    blurb: "Cut out a school of paper fish, clip a paperclip to each one, and go fishing with a magnet on a string. Counting your catch is half the game!",
+    materials: ["Colored paper or thin cardboard", "Paperclips", "A stick, dowel or wooden spoon", "String or yarn", "A large fridge magnet", "Tape", "Crayons or markers", "Scissors (grown-up job)"],
+    steps: [
+      "Grown-up draws simple fish shapes on the colored paper and cuts out 6–8 fish (older toddlers can help with safety scissors).",
+      "Decorate each fish — stripes, spots and a big smiley eye — then slide a paperclip onto each fish's mouth.",
+      "Tie one end of the string (about an arm's length) to the end of the stick to make your fishing rod.",
+      "Grown-up ties the magnet to the other end of the string and wraps it with tape so it can't come loose — this is your hook.",
+      "Spread the fish on a blue blanket 'pond' and dangle the magnet over them — catch one, count it, and fish again! 🐠"
+    ],
+    tip: "Write a number on each fish and add up your catch — sneak in counting practice. Always supervise: magnets and paperclips are grown-up-checked parts.",
+    video: "https://www.youtube.com/watch?v=3uVg4ROT2T8", videoTitle: "Felt Fishing Game STEM SAK",
     isNew: true
   }
 ];
