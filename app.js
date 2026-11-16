@@ -387,8 +387,7 @@ const IDEAS = [
       "Head outside, hold the bag open, and run into the breeze — your kite will dance along behind you! 🪁"
     ],
     tip: "No wind? No problem — toddlers flying this kite mostly power it by running, and the bag puffs up beautifully behind them.",
-    video: "https://www.youtube.com/watch?v=WpDA4xP1wb4", videoTitle: "How to make handmade paper Kite at home / DIY Kite / Paper Kite making idea",
-    isNew: true
+    video: "https://www.youtube.com/watch?v=WpDA4xP1wb4", videoTitle: "How to make handmade paper Kite at home / DIY Kite / Paper Kite making idea"
   },
   {
     id: "magnetic-fishing-game",
@@ -407,7 +406,46 @@ const IDEAS = [
       "Spread the fish on a blue blanket 'pond' and dangle the magnet over them — catch one, count it, and fish again! 🐠"
     ],
     tip: "Write a number on each fish and add up your catch — sneak in counting practice. Always supervise: magnets and paperclips are grown-up-checked parts.",
-    video: "https://www.youtube.com/watch?v=3uVg4ROT2T8", videoTitle: "Felt Fishing Game STEM SAK",
+    video: "https://www.youtube.com/watch?v=3uVg4ROT2T8", videoTitle: "Felt Fishing Game STEM SAK"
+  },
+  {
+    id: "rain-stick",
+    title: "🌧️ Paper Towel Tube Rain Stick",
+    image: "images/rain-stick.jpg",
+    alt: "Two colorful handmade rain sticks made from paper towel rolls decorated with bright tape and paper",
+    tags: ["cardboard"],
+    time: "20–25 min",
+    blurb: "Seal a paper towel tube, hide a foil spiral and a handful of rice inside, and every slow tip sounds like falling rain. Decorate it loud — quiet rain, colorful stick.",
+    materials: ["Paper towel roll", "Construction paper", "Aluminum foil", "Dry rice (a small handful)", "Tape", "Markers or stickers"],
+    steps: [
+      "Grown-up traces the tube end on construction paper, cuts out two bigger circles, and tapes one securely over one end of the tube.",
+      "Scrunch a long strip of aluminum foil into a loose spiral coil and slide it inside the tube — this slows the rice down.",
+      "Pour a small handful of dry rice into the open end with a cup or spoon.",
+      "Tape the second paper circle over the open end so everything is sealed in tight.",
+      "Decorate the tube with markers and stickers, then tip it slowly end to end — listen, it's raining! 🌧️"
+    ],
+    tip: "Seal both ends extra well with tape and supervise little ones — if a cap loosens, the rice becomes a choking hazard, so re-tape it straight away.",
+    video: "https://www.youtube.com/watch?v=QfEaoSJ2Asg", videoTitle: "Easy DIY rain stick- great craft for kids of ALL ages!",
+    isNew: true
+  },
+  {
+    id: "toilet-roll-train",
+    title: "🚂 Toilet Roll Train",
+    image: "images/toilet-roll-train.jpg",
+    alt: "A colorful toy train made from painted toilet paper rolls with bottle cap wheels linked together",
+    tags: ["cardboard", "paper"],
+    time: "25–30 min",
+    blurb: "Paint four or five toilet rolls in rainbow colors, add bottle-cap wheels, link them with yarn, and you have a whole train. Load tiny toys in the cars and choo-choo across the floor!",
+    materials: ["4–5 toilet paper rolls", "Washable paint or colored paper", "Bottle caps or cardboard circles", "Glue", "Yarn or string", "Cotton ball"],
+    steps: [
+      "Paint each toilet roll a different bright color (or wrap it in colored paper) and let them dry — one will be the engine, the rest are cars.",
+      "Glue four bottle caps or cardboard circles onto each roll as wheels — two on each side near the bottom.",
+      "Make the engine special: glue a bottle cap or small roll upright on top as a chimney and tuck in a cotton ball for steam.",
+      "Grown-up pokes a tiny hole at each end of every car and links them together with loops of yarn, engine first.",
+      "Line up your train, load tiny toys or teddies into the cars, and push it off — choo choo! 🚂"
+    ],
+    tip: "Draw a smiley face on the front of the engine and give your train a name — named trains get played with twice as long.",
+    video: "https://www.youtube.com/watch?v=aHqS1Xu50to", videoTitle: "Kids' Craft Stop Motion: How To Make A Rainbow Train With Toilet Rolls",
     isNew: true
   }
 ];
